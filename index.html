@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Baap er Bank</title>
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <header>
+      <h1 class="text-5xl font-bold text-center mt-20 text-teal-500 mb-5">
+        Wecome to <span class="text-purple-500"> Baaper Bank</span>
+      </h1>
+    </header>
+    <main class="w-3/4 mx-auto drop-shadow-md flex flex-col items-center p-5">
+      <button
+        id="email-login"
+        class="w-1/3 inline-block border-2 rounded border-teal-500 px-3 py-2 my-2 font-medium whitespace-nowrap"
+      >
+        Login with Email
+      </button>
+      <button
+        class="w-1/3 inline-block border-2 rounded border-teal-500 px-3 py-2 my-2 font-medium whitespace-nowrap"
+      >
+        Login with Google
+      </button>
+      <button
+        class="w-1/3 inline-block border-2 rounded border-teal-500 px-3 py-2 my-2 font-medium whitespace-nowrap"
+      >
+        Login with Github
+      </button>
+    </main>
+    <script>
+      document
+        .getElementById("email-login")
+        .addEventListener("click", function () {
+          window.location.href = "./login.html";
+        });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bank</title>
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <section class="w-3/4 mx-auto my-10">
+      <h1 class="text-5xl text-center mx-auto mb-10">
+        Let's Make Some <span class="text-purple-500 mb-10"> Mooooney</span>
+      </h1>
+      <div class="grid grid-cols-3 gap-4">
+        <div class="bg-cyan-300 p-5 text-white">
+          <h3 class="text-xl">Deposit</h3>
+          <h2 class="text-4xl font-medium">$ <span id="deposit">00</span></h2>
+        </div>
+        <div class="bg-emerald-300 p-5 text-white">
+          <h3 class="text-xl">Withdraw</h3>
+          <h2 class="text-4xl font-medium">$ <span id="withdraw">00</span></h2>
+        </div>
+        <div class="bg-fuchsia-300 p-5 text-white">
+          <h3 class="text-xl">Balance</h3>
+          <h2 class="text-4xl font-medium">$ <span id="balance">00</span></h2>
+        </div>
+      </div>
+    </section>
+    <section class="w-3/4 mx-auto">
+      <div class="grid grid-cols-2 gap-4">
+        <div class="bg-violet-200 p-5">
+          <h3 class="text-xl">Please Deposit</h3>
+          <input
+            id="deposit-input"
+            class="w-3/4 my-2 px-2 py-.5 border-violet-300 border-2 rounded outline-0"
+            type="text"
+            placeholder="$ amount you want to deposit"
+          />
+          <br />
+          <button
+            id="deposit-button"
+            class="bg-violet-500 py-1 px-3 rounded text-white font-medium"
+          >
+            Deposit
+          </button>
+        </div>
+        <div class="bg-teal-200 p-5">
+          <h3 class="text-xl">Please Withdraw</h3>
+          <input
+            id="withdraw-input"
+            class="w-3/4 my-2 px-2 py-0.5 border-teal-300 border-2 rounded outline-0"
+            type="text"
+            placeholder="$ amount you want to withdraw"
+          />
+          <br />
+          <button
+            id="withdraw-button"
+            class="bg-teal-500 py-1 px-3 rounded text-white font-medium"
+          >
+            Withdraw
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <script src="./js/banking.js"></script>
+  </body>
+</html>
